@@ -1,6 +1,5 @@
 import React from 'react'
-import Comp3Img1 from "../assets/Comp3Img1.png"
-const Comp3 = () => {
+const Comp3 = (props) => {
   return (
     <div className='flex 
     flex-col 
@@ -11,14 +10,14 @@ const Comp3 = () => {
      bg-[#FFFFFF]
      rounded-[10px]
      mt-4
-     ml-6
      '>
-    <p className='font-medium text-[14px] text-[#1E1E1E] p-2'>Recipe Suggestions</p>
-    <img src={Comp3Img1} alt="" className='w-[69px] h-[70px]'/>
+    <p className='font-medium text-[14px] text-[#1E1E1E] p-2'>{props.text}</p>
+    <img src={props.img} alt="" className='w-[69px] h-[70px] object-contain mx-auto'/>
     <div className='bg-[#F39C1233] w-[99px] h-[32px]   rounded-3xl text-[#F39C12] text-center
     cursor-pointer
+    mb-2
     '>
-      Browse
+      {props.btn}
     </div>
     </div>
   )
