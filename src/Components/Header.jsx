@@ -12,7 +12,7 @@ const Header = () => {
   const [open,setOpen]=useState(false);
   return (
     <>
-    <div className='w-full min-h-[102px] bg-amber-50  flex items-center px-2 lg:px-20'>
+    <div className='w-full min-h-[102px] bg-white  flex items-center px-2 lg:px-20'>
     <div className='lg:hidden mr-3'>
     <HiBars3 size={28} onClick={() => setOpen(true)} />
     </div>
