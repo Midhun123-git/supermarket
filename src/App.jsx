@@ -1,6 +1,5 @@
 import React from 'react'
 import {Routes,Route} from "react-router-dom"
-import Img from "./assets/img.png"
 import Header from './Components/Header'
 import Comp1 from './Components/Comp1'
 import Comp2 from './Components/Comp2'
