@@ -2,21 +2,6 @@ import React from 'react'
 import { FaArrowRightLong } from "react-icons/fa6";
 import Header from '../Components/Header'
 import Comp1 from '../Components/Comp1'
-import Img1 from "../assets/Comp1/img1.png"
-import Img2 from "../assets/Comp1/img2.png"
-import Img3 from "../assets/Comp1/img3.png"
-import Img4 from "../assets/Comp1/img4.png"
-import Img5 from "../assets/Comp1/img5.png"
-import Img6 from "../assets/Comp1/img6.png"
-import Img7 from "../assets/Comp1/img7.png"
-import Img8 from "../assets/Comp1/img8.png"
-import Img9 from "../assets/Comp1/img9.png"
-import Img10 from "../assets/Comp1/img10.png"
-import img1 from "../assets/Comp2/img1.png"
-import img2 from "../assets/Comp2/img2.png"
-import img3 from "../assets/Comp2/img3.png"
-import img4 from "../assets/Comp2/img4.png"
-import img5 from "../assets/Comp2/img5.png"
 import Comp2 from '../Components/Comp2'
 import Comp4 from '../Components/Comp4'
 import Comp5 from '../Components/Comp5';
@@ -38,7 +23,7 @@ const Homepage = () => {
   <Header/>
             </div>
             {/* First Row Components Starts*/}
-            <div className='flex gap-2 mt-27 flex-wrap justify-center'>
+            {/* <div className='flex gap-2 mt-27 flex-wrap justify-center'>
 
                     <Comp1
                     text="Groceries
@@ -92,7 +77,11 @@ const Homepage = () => {
                             & Kitchen "
                             img={Img10}
                     />
+            </div> */}
+            <div className='mt-27 flex justify-center flex-wrap'>
+            <Comp1/>
             </div>
+          
             {/* First Row Components Ends*/}
 
             {/* Second Row Components Starts */}
@@ -116,9 +105,10 @@ mt-9
 
 </div>
 </div>
+
 {/* Second Row Components Ends */}
 {/* Third Row Componenet Starts */}
-<div className='flex gap-6  flex-wrap  mt-9 justify-center'>
+{/* <div className='flex gap-6  flex-wrap  mt-9 justify-center'>
   <Comp2
   bg="#DEFFEC"
   textColor="#27AE60"
@@ -173,6 +163,9 @@ mt-9
   btnbg="#4D0000"
   btntextcolor="#FFFFFF"
   />
+</div> */}
+<div className='mt-9'>
+<Comp2/>
 </div>
 {/* Third Row Componenet Ends */}
 {/* Comp4 Starts */}
