@@ -2,7 +2,7 @@ import React from 'react'
 import { FaArrowRightLong } from "react-icons/fa6";
 import Header from '../Components/Header'
 import Comp1 from '../Components/Comp1'
-import Img1 from "../assets/Img1.png"
+import Img1 from "../assets/img1.png"
 import Img2 from "../assets/Comp1/img2.png"
 import Img3 from "../assets/Comp1/img3.png"
 import Img4 from "../assets/Comp1/img4.png"

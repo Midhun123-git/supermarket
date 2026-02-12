@@ -1,8 +1,8 @@
 import React from 'react'
 import Comp3 from './Comp3'
-import Img1 from "../assets/Comp3/Img1.png"
-import Img2 from "../assets/Comp3/Img2.png"
-import Img3 from "../assets/Comp3/Img3.png"
+import Img1 from "../assets/Comp3/img1.png"
+import Img2 from "../assets/Comp3/img2.png"
+import Img3 from "../assets/Comp3/img3.png"
 const Comp4 = () => {
   return (
     <div className='flex  
