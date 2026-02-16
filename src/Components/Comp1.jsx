@@ -65,16 +65,16 @@ const Comp1 = () => {
 
   ]
   return (   
-    <div className='flex gap-2 flex-wrap justify-center'>
+    <div className='flex  flex-wrap justify-center'>
       {prod.map((items)=>(
 
-<div className='w-[114px] h-[125px] 
+<div className='w-[114px] 
 rounded-xl bg-white 
 flex flex-col items-center justify-between 
-mt-7 ml-6 p-2 relative'>
+mt-7 ml-2 p-2 relative'>
 
 {/* TEXT */}
-<p className='text-center text-[#1E1E1E] font-medium text-[14px] h-[40px] overflow-hidden'>
+<p className='text-center text-[#1E1E1E] font-medium text-[14px] overflow-hidden'>
   {items.text}
 </p>
 

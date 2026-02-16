@@ -23,65 +23,9 @@ const Homepage = () => {
   <Header/>
             </div>
             {/* First Row Components Starts*/}
-            {/* <div className='flex gap-2 mt-27 flex-wrap justify-center'>
-
-                    <Comp1
-                    text="Groceries
-                            & Kitchen "
-                            img={Img1}
-                    />
-
-<Comp1
-                    text="Baby & Kids "
-                            img={Img2}
-                    />
-
-<Comp1
-                    text="Personal Care & Hygiene"
-                            img={Img3}
-                    />
-
-<Comp1
-                    text="Groceries
-                            & Kitchen "
-                            img={Img4}
-                    />
-
-<Comp1
-                    text="Groceries
-                            & Kitchen "
-                            img={Img5}
-                    />
-                     <Comp1
-                    text="Groceries
-                            & Kitchen "
-                            img={Img6}
-                    />
-                     <Comp1
-                    text="Groceries
-                            & Kitchen "
-                            img={Img7}
-                    />
-                     <Comp1
-                    text="Groceries
-                            & Kitchen "
-                            img={Img8}
-                    />
-                     <Comp1
-                    text="Groceries
-                            & Kitchen "
-                            img={Img9}
-                    />
-                     <Comp1
-                    text="Groceries
-                            & Kitchen "
-                            img={Img10}
-                    />
-            </div> */}
             <div className='mt-27 flex justify-center flex-wrap'>
             <Comp1/>
             </div>
-          
             {/* First Row Components Ends*/}
 
             {/* Second Row Components Starts */}
