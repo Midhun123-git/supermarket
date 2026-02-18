@@ -23,7 +23,7 @@ const Homepage = () => {
   <Header/>
             </div>
             {/* First Row Components Starts*/}
-            <div className='mt-27 flex justify-center flex-wrap'>
+            <div className='mt-27 flex justify-center lg:flex-wrap'>
             <Comp1/>
             </div>
             {/* First Row Components Ends*/}
@@ -31,7 +31,7 @@ const Homepage = () => {
             {/* Second Row Components Starts */}
 <div className='flex justify-center'>
 
-<div className=" w-full lg:w-[90%] h-[166px] rounded-xl 
+<div className=" w-full lg:w-[80%] h-[166px] rounded-xl 
 bg-[linear-gradient(to_right,#5B5BD6_0%,#8E7CC3_50%,#EAE6F5_100%)]
 flex items-center j px-8
 mt-9
@@ -113,13 +113,13 @@ mt-9
 </div>
 {/* Third Row Componenet Ends */}
 {/* Comp4 Starts */}
-<div className='mt-7 lg:ml-17 m-2'>
+<div className='mt-7 lg:ml-38 m-2'>
     <Comp4/>
 </div>
 {/* Comp4 Ends*/}
 {/* Text Beofore Comp5 Starts */}
 <div className='flex justify-evenly items-center mt-9'>
- <div className='flex items-center justify-between w-[90%]'> 
+ <div className='flex items-center justify-between w-[80%]'> 
         <p className='font-medium text-[18px] text-[#1E1E1E]'>Recommended for you</p>
         <div className='flex gap-3 items-center'>
                         <p className='text-[#27AE60] text-[16px] font-medium'>See All</p>
@@ -137,7 +137,7 @@ mt-9
 </div>
 {/* Text Beofore Comp5 Ends */}
 {/* Comp5 Starts */}
-<div className='flex gap-6 flex-wrap justify-center mt-6'>
+<div className='flex flex-wrap justify-center gap-4 mt-6'>
    <Comp5
   image={imgg1}
   title="Amul Dark Chocolate 70% Cocoa"
@@ -217,7 +217,7 @@ mt-9
 {/* Comp 5 Ends*/}
 {/* Flassh Sale Div Starts */}
 <div className='flex justify-center mt-9'>
-<div className='w-[94%] min-h-[314px] 
+<div className='w-[85%] min-h-[314px] 
 flex flex-col 
 lg:p-4 p-2
  bg-[#EAFFF3]
@@ -240,7 +240,7 @@ lg:p-4 p-2
 </span>
 </p>
 </div>
-<div className='flex gap-4 flex-wrap'>
+<div className='flex gap-4 flex-wrap mt-2'>
 <Comp5
   image={imgg4}
   title="Broccoli"
@@ -317,14 +317,14 @@ lg:p-4 p-2
 </div>
 {/* Flassh Sale Div Ends */}
 {/* Top Brand Text Bef  StRTS */}
-<p className='lg:ml-10 mt-7 p-2 text-[16px]
+<p className='lg:ml-30 mt-7 p-2 text-[16px]
 font-semibold text-[#1E1E1E]
 flex justify-center lg:justify-start
 '>Top Brands</p>
 {/* Top Brand Text Bef  Ends */}
 
 {/* Top Brands Starts */}
-<div className='flex gap-3 justify-center  mt-4 flex-wrap'>
+<div className='flex gap-7 justify-center  mt-4 flex-wrap'>
                 <div className='h-[108px] w-[187px]
                 rounded-[10px] border border-[#27AE60]
                 bg-[#FFFFFF]
@@ -389,20 +389,11 @@ flex justify-center lg:justify-start
                        
                               
                 </div>
-                <div className='h-[108px] w-[187px]
-                rounded-[10px] border border-[#27AE60]
-                bg-[#FFFFFF]
-                flex items-center justify-center
-                '>
-                        
-                        <img src={L4} alt=" " className="w-[90px] h-[50px] object-cover "/>
-                       
-                              
-                </div>
+                
 </div>
 {/* Top Brands Ends */}
 
-<p className='lg:ml-10 mt-7 p-2 text-[16px]
+<p className='lg:ml-30 mt-7 p-2 text-[16px]
 font-semibold text-[#1E1E1E]
 flex justify-center lg:justify-start
 '>Groceries & Kitchen </p>
@@ -412,12 +403,12 @@ flex justify-center lg:justify-start
 </div>
 {/* kitchen Items Ends */}
 
-<p className='lg:ml-10 mt-7 p-2 text-[16px]
+<p className='lg:ml-30 mt-7 p-2 text-[16px]
 font-semibold text-[#1E1E1E]
 flex justify-center lg:justify-start
 '>Baby & Kids</p>
 {/* Kids Item Starts */}
-<div className='flex justify-center p-6 items-center mt-4'>
+<div className='flex justify-center p-6  mt-4'>
  <Comp6/>
 </div>
 {/* Kids Item Ends */}

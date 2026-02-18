@@ -63,12 +63,12 @@ const Comp2 = () => {
       }
   ]
   return (
-    <div className='flex gap-2 justify-center flex-wrap'>
+    <div className='flex gap-5 justify-center flex-wrap pb-2'>
       {prod.map((items)=>(
 
-<div className='flex gap-3  items-center p-2
-h-[114px]
-rounded-[14px] mt-6 ml-7'
+<div className='flex   items-center p-2
+
+rounded-[14px] mt-6 '
 style={{backgroundColor:items.bg}}
 >
           <div className='flex flex-col gap-2'>

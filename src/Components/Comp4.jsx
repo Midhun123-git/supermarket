@@ -13,7 +13,7 @@ const Comp4 = () => {
      rounded-[20px]
      
      items-center
-     p-2
+     p-2  
      '>
             <div className='flex flex-col gap-5'>
                     <p className='text-[#1E1E1E] 

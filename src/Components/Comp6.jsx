@@ -86,13 +86,13 @@ const Comp6 = () => {
                                 }
     ]
   return (   
-   <div className='flex flex-col gap-2'>
-    <div className='flex  gap-2 flex-wrap'>
+   <div className='flex flex-col '>
+    <div className='flex  gap-1 flex-wrap'>
         {Comp.map((items)=>(
             <div className='w-[114px] h-[125px] 
             rounded-xl bg-[#27AE601A]
             flex flex-col items-center justify-between 
-            mt-7 ml-6 p-2 relative'
+            mt-7 ml-3 p-2 relative'
             key={items.id}
             >
           
@@ -117,12 +117,12 @@ const Comp6 = () => {
         ))}
     
   </div>
-  <div className='flex gap-2 flex-wrap'>
+  <div className='flex  flex-wrap'>
   {Comp2.map((items)=>(
             <div className='w-[114px] h-[125px] 
             rounded-xl bg-[#27AE601A]
             flex flex-col items-center justify-between 
-            mt-7 ml-6 p-2 relative'
+            mt-7 ml-3 p-2 relative'
             key={items.id}
             >
           

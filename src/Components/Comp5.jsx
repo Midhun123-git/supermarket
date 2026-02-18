@@ -14,7 +14,7 @@ const Comp5 = ({
 
   return (
     <div className='w-[140px]  rounded-3xl
-     bg-[#FFFFFF]  mt-5 ml-5
+     bg-[#FFFFFF]   
      flex flex-col justify-between'>
 
       {/* IMAGE SECTION */}
