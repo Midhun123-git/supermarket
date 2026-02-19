@@ -12,7 +12,7 @@ const Header = () => {
   const [open,setOpen]=useState(false);
   return (
     <>
-    <div className='w-full min-h-[102px] bg-white  flex items-center px-2 lg:px-20'>
+    <div className='w-full min-h-[102px] bg-white  flex items-center px-2 xl:px-20 lg:px-2'>
     <div className='lg:hidden mr-3'>
     <HiBars3 size={28} onClick={() => setOpen(true)} />
     </div>
@@ -23,7 +23,7 @@ const Header = () => {
    </div>
    {/* left Section */}
     {/* Right Section */}
-    <div className='flex  gap-7 items-center'>
+    <div className='flex  xl:gap-7 lg:gap-3 items-center'>
     <div className='hidden lg:flex gap-2 items-center '>
         <CiLocationOn size={20}/>
         <p  className="font-inter text-[#1E1E1E] font-semibold text-[16px]">Location</p>
@@ -75,7 +75,8 @@ const Header = () => {
     {/* Profile */}
      {/* Cart Notification */}
       <div className='w-[20px] h-[20px] rounded-full
-     bg-[#E74C3C] hidden lg:flex justify-center items-center  absolute top-4 right-35
+     bg-[#E74C3C] hidden lg:flex justify-center items-center  absolute xl:top-4 xl:right-0
+     lg:right-18 lg:top-4
       text-white'>
       1
       </div>
@@ -113,7 +114,7 @@ const Header = () => {
     h-[34px] w-[34px]'>
     <FaUserLarge size={24} className='text-[#8F8F8F] rounded-full'/>
     </div>
-    <p className='text-[#1E1E1E] text-[12px] font-semibold1'>Profile</p>
+    <p className='text-[#1E1E1E] text-[12px] font-semibold'>Profile</p>
     </div>
 
     <div className='hidden lg:flex gap-2 items-center '>

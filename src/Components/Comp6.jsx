@@ -87,7 +87,9 @@ const Comp6 = () => {
     ]
   return (   
    <div className='flex flex-col '>
-    <div className='flex  gap-1 flex-wrap'>
+    <div className='grid lg:grid-cols-5 xl:grid-cols-10  xl:gap-2 
+    lg:gap-15 grid-cols-2 gap-2
+    ' >
         {Comp.map((items)=>(
             <div className='w-[114px] h-[125px] 
             rounded-xl bg-[#27AE601A]
@@ -117,7 +119,9 @@ const Comp6 = () => {
         ))}
     
   </div>
-  <div className='flex  flex-wrap'>
+  <div className='grid lg:grid-cols-6 gap-1 mt-7
+  grid-cols-2 gap-2
+  '>
   {Comp2.map((items)=>(
             <div className='w-[114px] h-[125px] 
             rounded-xl bg-[#27AE601A]

@@ -23,9 +23,13 @@ const Homepage = () => {
   <Header/>
             </div>
             {/* First Row Components Starts*/}
-            <div className='mt-27 flex justify-center lg:flex-wrap'>
+            <div className='flex justify-center'>
+               <div className='mt-27 
+               '>
             <Comp1/>
             </div>
+            </div>
+           
             {/* First Row Components Ends*/}
 
             {/* Second Row Components Starts */}
@@ -108,12 +112,12 @@ mt-9
   btntextcolor="#FFFFFF"
   />
 </div> */}
-<div className='mt-9'>
+<div className='mt-9 flex justify-center'>
 <Comp2/>
 </div>
 {/* Third Row Componenet Ends */}
 {/* Comp4 Starts */}
-<div className='mt-7 lg:ml-38 m-2'>
+<div className='mt-7 xl:ml-38 lg:ml-28 m-2'>
     <Comp4/>
 </div>
 {/* Comp4 Ends*/}
@@ -137,7 +141,13 @@ mt-9
 </div>
 {/* Text Beofore Comp5 Ends */}
 {/* Comp5 Starts */}
-<div className='flex flex-wrap justify-center gap-4 mt-6'>
+<div className='flex  justify-center'>
+<div className='grid xl:grid-cols-9 
+lg:grid-cols-5  grid-cols-2 gap-4
+lg:gap-8 xl:gap-4  
+xl:ml-33
+mt-7
+'>
    <Comp5
   image={imgg1}
   title="Amul Dark Chocolate 70% Cocoa"
@@ -214,6 +224,8 @@ mt-9
 
 /> 
 </div>
+</div>
+
 {/* Comp 5 Ends*/}
 {/* Flassh Sale Div Starts */}
 <div className='flex justify-center mt-9'>
@@ -240,7 +252,7 @@ lg:p-4 p-2
 </span>
 </p>
 </div>
-<div className='flex gap-4 flex-wrap mt-2'>
+<div className='flex gap-4 flex-wrap mt-2 lg:ml-9 xl:ml-2'>
 <Comp5
   image={imgg4}
   title="Broccoli"
@@ -317,14 +329,17 @@ lg:p-4 p-2
 </div>
 {/* Flassh Sale Div Ends */}
 {/* Top Brand Text Bef  StRTS */}
-<p className='lg:ml-30 mt-7 p-2 text-[16px]
+<p className='xl:ml-30 lg:ml-18 mt-7 p-2 text-[16px]
 font-semibold text-[#1E1E1E]
 flex justify-center lg:justify-start
 '>Top Brands</p>
 {/* Top Brand Text Bef  Ends */}
 
 {/* Top Brands Starts */}
-<div className='flex gap-7 justify-center  mt-4 flex-wrap'>
+<div className='flex justify-center'>
+<div className='grid xl:grid-cols-6 lg:grid-cols-3 xl:gap-8 lg:gap-15 mt-5
+grid-cols-1  gap-2 
+'>
                 <div className='h-[108px] w-[187px]
                 rounded-[10px] border border-[#27AE60]
                 bg-[#FFFFFF]
@@ -391,9 +406,11 @@ flex justify-center lg:justify-start
                 </div>
                 
 </div>
+</div>
+
 {/* Top Brands Ends */}
 
-<p className='lg:ml-30 mt-7 p-2 text-[16px]
+<p className='lg:ml-18 xl:ml-30 mt-7 p-2 text-[16px]
 font-semibold text-[#1E1E1E]
 flex justify-center lg:justify-start
 '>Groceries & Kitchen </p>
@@ -408,7 +425,7 @@ font-semibold text-[#1E1E1E]
 flex justify-center lg:justify-start
 '>Baby & Kids</p>
 {/* Kids Item Starts */}
-<div className='flex justify-center p-6  mt-4'>
+<div className='flex justify-center   mt-4'>
  <Comp6/>
 </div>
 {/* Kids Item Ends */}

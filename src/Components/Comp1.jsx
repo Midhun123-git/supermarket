@@ -65,13 +65,15 @@ const Comp1 = () => {
 
   ]
   return (   
-    <div className='flex  flex-wrap justify-center'>
+    <div className=' grid  lg:grid-cols-5 lg:gap-10 xl:grid-cols-10 xl:gap-3
+    grid-cols-2  gap-4
+    '>
       {prod.map((items)=>(
 
 <div className='w-[114px] 
 rounded-xl bg-white 
 flex flex-col items-center justify-between 
-mt-7 ml-2 p-2 relative'>
+mt-7  p-2 relative'>
 
 {/* TEXT */}
 <p className='text-center text-[#1E1E1E] font-medium text-[14px] overflow-hidden'>
