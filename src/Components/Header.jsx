@@ -75,7 +75,7 @@ const Header = () => {
     {/* Profile */}
      {/* Cart Notification */}
       <div className='w-[20px] h-[20px] rounded-full
-     bg-[#E74C3C] hidden lg:flex justify-center items-center  absolute xl:top-4 xl:right-0
+     bg-[#E74C3C] hidden lg:flex justify-center items-center  absolute xl:top-4 xl:right-35
      lg:right-18 lg:top-4
       text-white'>
       1
@@ -114,7 +114,7 @@ const Header = () => {
     h-[34px] w-[34px]'>
     <FaUserLarge size={24} className='text-[#8F8F8F] rounded-full'/>
     </div>
-    <p className='text-[#1E1E1E] text-[12px] font-semibold'>Profile</p>
+    <p className='text-[#1E1E1E] text-[12px] font-semibold1'>Profile</p>
     </div>
 
     <div className='hidden lg:flex gap-2 items-center '>

@@ -126,7 +126,7 @@ const Comp6 = () => {
             <div className='w-[114px] h-[125px] 
             rounded-xl bg-[#27AE601A]
             flex flex-col items-center justify-between 
-            mt-7 ml-3 p-2 relative'
+            mt-7  p-2 relative'
             key={items.id}
             >
           
