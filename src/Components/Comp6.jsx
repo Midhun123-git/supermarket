@@ -119,8 +119,7 @@ const Comp6 = () => {
         ))}
     
   </div>
-  <div className='grid lg:grid-cols-6 gap-1 mt-7
-  grid-cols-2 gap-2
+  <div className='flex gap-2 mt-7
   '>
   {Comp2.map((items)=>(
             <div className='w-[114px] h-[125px] 
@@ -150,6 +149,7 @@ const Comp6 = () => {
           
         ))}
   </div>
+
   </div>
   )
 }

@@ -14,6 +14,8 @@ import L2 from "../assets/Logo/L2.png"
 import L3 from "../assets/Logo/L3.png"
 import L4 from "../assets/Logo/L4.png"
 
+import bhd from "../assets/Best-home-deals.png"
+
 import Comp6 from '../Components/Comp6';
 import Footer from '../Components/Footer';
 const Homepage = () => {
@@ -35,23 +37,22 @@ const Homepage = () => {
             {/* Second Row Components Starts */}
 <div className='flex justify-center'>
 
-<div className=" w-full lg:w-[80%] h-[166px] rounded-xl 
+{/* <div className=" w-full lg:w-[80%] h-[166px] rounded-xl 
 bg-[linear-gradient(to_right,#5B5BD6_0%,#8E7CC3_50%,#EAE6F5_100%)]
 flex items-center j px-8
 mt-9
-">
+"> */}
 
-  <div>
-    <h2 className="text-white text-[32px] font-bold">
-      Best Home Deals
-    </h2>
-    <p className="text-white text-[32px] font-medium">
-      40% OFF
-    </p>
-  </div>
-
-
+<div className='
+rounded-xl mt-7
+'>
+<img src={bhd} alt=""  className='lg:w-[80%] xl:ml-0 lg:ml-30 xl:w-full h-[166px]'/>
 </div>
+
+
+
+
+{/* </div> */}
 </div>
 
 {/* Second Row Components Ends */}
