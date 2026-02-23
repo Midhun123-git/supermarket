@@ -5,10 +5,14 @@ import Comp1 from '../Components/Comp1'
 import Comp2 from '../Components/Comp2'
 import Comp4 from '../Components/Comp4'
 import Comp5 from '../Components/Comp5';
+import Comp6 from '../Components/Comp6';
+import Footer from '../Components/Footer';
+
 import imgg1 from "../assets/Comp5/img1.png"
 import imgg2 from "../assets/Comp5/img2.png"
 import imgg3 from "../assets/Comp5/img3.png"
 import imgg4 from "../assets/Comp5/img4.png"
+
 import L1 from "../assets/Logo/L1.png"
 import L2 from "../assets/Logo/L2.png"
 import L3 from "../assets/Logo/L3.png"
@@ -16,426 +20,138 @@ import L4 from "../assets/Logo/L4.png"
 
 import bhd from "../assets/Best-home-deals.png"
 
-import Comp6 from '../Components/Comp6';
-import Footer from '../Components/Footer';
 const Homepage = () => {
   return (
-    <div className='bg-[#ECF0F1] flex flex-col '>
-            <div className='fixed top-0 left-0 right-0 bg-white z-10'>
-  <Header/>
-            </div>
-            {/* First Row Components Starts*/}
-            <div className='flex justify-center'>
-               <div className='mt-27 
-               '>
-            <Comp1/>
-            </div>
-            </div>
-           
-            {/* First Row Components Ends*/}
+    <div className='bg-[#ECF0F1]'>
 
-            {/* Second Row Components Starts */}
-<div className='flex justify-center'>
+      {/* Fixed Header */}
+      <div className='fixed top-0 left-0 right-0 bg-white z-10'>
+        <Header/>
+      </div>
 
-{/* <div className=" w-full lg:w-[80%] h-[166px] rounded-xl 
-bg-[linear-gradient(to_right,#5B5BD6_0%,#8E7CC3_50%,#EAE6F5_100%)]
-flex items-center j px-8
-mt-9
-"> */}
+      {/*  MASTER CENTER CONTAINER */}
+      <div className='max-w-[1320px] mx-auto px-6 xl:px-0 pt-27'>
 
-<div className='
-rounded-xl mt-7
-'>
-<img src={bhd} alt=""  className='lg:w-[80%] xl:ml-0 lg:ml-30 xl:w-full h-[166px]'/>
-</div>
+        {/* First Row */}
+        <Comp1 />
 
-
-
-
-{/* </div> */}
-</div>
-
-{/* Second Row Components Ends */}
-{/* Third Row Componenet Starts */}
-{/* <div className='flex gap-6  flex-wrap  mt-9 justify-center'>
-  <Comp2
-  bg="#DEFFEC"
-  textColor="#27AE60"
-  text="Essential Focus"
-  text2="Fresh Vegitables"
-  img={img1}
-  btn="Order Now"
-  btnbg="#27AE60"
-  btntextcolor="#FFFFFF"
-  />
-
-<Comp2
-  bg="#FCE4BE"
-  textColor="#F39C12"
-  text="Daily Saver"
-  text2="Grocery Discounts"
-  img={img2}
-  btn="Order Now"
-  btnbg="#FFFFFF"
-  btntextcolor="#1E1E1E"
-  />
-
-<Comp2
-  bg="#FADDDA"
-  textColor="#E74C3C"
-  text="Must-Have"
-  text2="Snacks & Beverages"
-  img={img3}
-  btn="Order Now"
-  btnbg="#E74C3C"
-  btntextcolor="#FFFFFF"
-  />
-
-<Comp2
-  bg="#FCF3D0"
-  textColor="#F1C40F"
-  text="Best Value"
-  text2="Dairy & Bakery"
-  img={img4}
-  btn="Order Now"
-  btnbg="#FFFFFF"
-  btntextcolor="#4D0000"
-  />
-
-<Comp2
-  bg="#DDCECE"
-  textColor="#4D0000"
-  text="Trending Now"
-  text2="Chocolates"
-  img={img5}
-  btn="Order Now"
-  btnbg="#4D0000"
-  btntextcolor="#FFFFFF"
-  />
-</div> */}
-<div className='mt-9 flex justify-center'>
-<Comp2/>
-</div>
-{/* Third Row Componenet Ends */}
-{/* Comp4 Starts */}
-<div className='mt-7 xl:ml-36 lg:ml-28 m-2'>
-    <Comp4/>
-</div>
-{/* Comp4 Ends*/}
-{/* Text Beofore Comp5 Starts */}
-<div className='flex justify-evenly items-center mt-9'>
- <div className='flex items-center justify-between w-[80%]'> 
-        <p className='font-medium text-[18px] text-[#1E1E1E]'>Recommended for you</p>
-        <div className='flex gap-3 items-center'>
-                        <p className='text-[#27AE60] text-[16px] font-medium'>See All</p>
-                        <div className='flex 
-                        items-center 
-                        justify-center 
-                        rounded-full
-                        w-[38px] h-[38px] bg-[#27AE60]
-                        cursor-pointer
-                        '>
-                                                <FaArrowRightLong size={19} className='text-white'/>
-                        </div>
+        {/* Banner */}
+        <div className='mt-7'>
+          <img 
+            src={bhd} 
+            alt=""  
+            className='w-full h-[166px] object-cover rounded-xl'
+          />
         </div>
- </div>
-</div>
-{/* Text Beofore Comp5 Ends */}
-{/* Comp5 Starts */}
-<div className='flex  justify-center'>
-<div className='grid xl:grid-cols-8 
-lg:grid-cols-5  grid-cols-2 gap-4
-lg:gap-8 xl:gap-4   
-mt-7
-'>
-   <Comp5
-  image={imgg1}
-  title="Amul Dark Chocolate 70% Cocoa"
-  per="5%"
-  gram="200g"
-  newPrice="₹180"
-  isCounter={true}
-/> 
 
-<Comp5
-  image={imgg2}
-  title="Organic Almond Milk"
-  per="10%"
-  oldPrice="₹280"
-  gram="1L"
-  newPrice="₹280"
+        {/* Comp2 */}
+        <div className='mt-9'>
+          <Comp2/>
+        </div>
 
-/> 
+        {/* Comp4 */}
+        <div className='mt-7'>
+          <Comp4/>
+        </div>
 
-<Comp5
-  image={imgg3}
-  title="Hybrid Tomato"
-  per="3%"
-  oldPrice="₹30"
-  gram="500g"
-  newPrice="₹25"
+        {/* Recommended Header */}
+        <div className='flex items-center justify-between mt-9'>
+          <p className='font-medium text-[18px] text-[#1E1E1E]'>
+            Recommended for you
+          </p>
 
-/> 
-<Comp5
-  image={imgg4}
-  title="Broccoli"
-  per="10%"
-  oldPrice="₹60"
-  gram="1piece"
-  newPrice="₹50"
+          <div className='flex gap-3 items-center'>
+            <p className='text-[#27AE60] text-[16px] font-medium'>
+              See All
+            </p>
 
-/> 
+            <div className='flex items-center justify-center rounded-full w-[38px] h-[38px] bg-[#27AE60] cursor-pointer'>
+              <FaArrowRightLong size={19} className='text-white'/>
+            </div>
+          </div>
+        </div>
 
-<Comp5
-  image={imgg1}
-  title="Amul Dark Chocolate 70% Cocoa"
-  per="5%"
-  gram="200g"
-  newPrice="₹180"
-  isCounter={true}
-/> 
+        {/* Comp5 Grid */}
+        <div className='grid xl:grid-cols-8 lg:grid-cols-5 grid-cols-2 gap-4 lg:gap-8 xl:gap-4 mt-7'>
+          <Comp5 image={imgg1} title="Amul Dark Chocolate 70% Cocoa" per="5%" gram="200g" newPrice="₹180" isCounter />
+          <Comp5 image={imgg2} title="Organic Almond Milk" per="10%" oldPrice="₹280" gram="1L" newPrice="₹280"/>
+          <Comp5 image={imgg3} title="Hybrid Tomato" per="3%" oldPrice="₹30" gram="500g" newPrice="₹25"/>
+          <Comp5 image={imgg4} title="Broccoli" per="10%" oldPrice="₹60" gram="1piece" newPrice="₹50"/>
+          <Comp5 image={imgg1} title="Amul Dark Chocolate 70% Cocoa" per="5%" gram="200g" newPrice="₹180" isCounter />
+          <Comp5 image={imgg2} title="Organic Almond Milk" per="10%" oldPrice="₹280" gram="1L" newPrice="₹280"/>
+          <Comp5 image={imgg3} title="Hybrid Tomato" per="3%" oldPrice="₹30" gram="500g" newPrice="₹25"/>
+          <Comp5 image={imgg4} title="Broccoli" per="10%" oldPrice="₹60" gram="1piece" newPrice="₹50"/>
+        </div>
 
-<Comp5
-  image={imgg2}
-  title="Organic Almond Milk"
-  per="10%"
-  oldPrice="₹280"
-  gram="1L"
-  newPrice="₹280"
+        {/* Flash Sale */}
+        <div className='mt-9'>
+          <div className='min-h-[314px] bg-[#EAFFF3] rounded-[20px] p-4'>
+            <div className='flex justify-between'>
+              <p className='text-[#F39C12] font-semibold text-[18px]'>
+                Flash Sale
+              </p>
 
-/> 
+              <p className='text-[#E74C3C] text-[14px] font-semibold'>
+                02h <span className='ml-2'>30m</span> <span className='ml-2'>02s</span>
+              </p>
+            </div>
 
-<Comp5
-  image={imgg3}
-  title="Hybrid Tomato"
-  per="3%"
-  oldPrice="₹30"
-  gram="500g"
-  newPrice="₹25"
+            <div className='flex gap-2 flex-wrap mt-3'>
+              <Comp5 image={imgg4} title="Broccoli" per="10%" oldPrice="₹60" gram="1piece" newPrice="₹50"/>
+              <Comp5 image={imgg2} title="Organic Almond Milk" per="10%" oldPrice="₹280" gram="1L" newPrice="₹280"/>
+              <Comp5 image={imgg3} title="Hybrid Tomato" per="3%" oldPrice="₹30" gram="500g" newPrice="₹25"/>
+              <Comp5 image={imgg1} title="Amul Dark Chocolate 70% Cocoa" per="5%" gram="200g" newPrice="₹180" isCounter/>
+              <Comp5 image={imgg4} title="Broccoli" per="10%" oldPrice="₹60" gram="1piece" newPrice="₹50"/>
+              <Comp5 image={imgg2} title="Organic Almond Milk" per="10%" oldPrice="₹280" gram="1L" newPrice="₹280"/>
+              <Comp5 image={imgg3} title="Hybrid Tomato" per="3%" oldPrice="₹30" gram="500g" newPrice="₹25"/>
+              <Comp5 image={imgg1} title="Amul Dark Chocolate 70% Cocoa" per="5%" gram="200g" newPrice="₹180" isCounter/>
+            </div>
+          </div>
+        </div>
 
-/> 
-<Comp5
-  image={imgg4}
-  title="Broccoli"
-  per="10%"
-  oldPrice="₹60"
-  gram="1piece"
-  newPrice="₹50"
+        {/* Top Brands */}
+        <p className='mt-7 text-[16px] font-semibold text-[#1E1E1E]'>
+          Top Brands
+        </p>
 
-/> 
-</div>
-</div>
+        <div className='grid xl:grid-cols-6 lg:grid-cols-3 grid-cols-1 gap-6 mt-5'>
+          {[L1, L2, L4, L3, L4, L3].map((logo, index) => (
+            <div key={index} className='h-[108px] w-[187px] rounded-[10px]  bg-white flex items-center justify-center'>
+              <img 
+  src={logo} 
+  alt="" 
+  className="max-h-[60px] max-w-[120px] object-contain"
+/>
+            </div>
+          ))}
+        </div>
 
-{/* Comp 5 Ends*/}
-{/* Flassh Sale Div Starts */}
-<div className='flex justify-center mt-9'>
-<div className='w-[81%] min-h-[314px] 
-flex flex-col 
-lg:p-4 p-2
- bg-[#EAFFF3]
- rounded-[20px]
-  
- '>
-<div className='flex justify-between w-full'>
-<p className='text-[#F39C12] font-semibold text-[18px]'>Flash Sale</p>
-<p className='text-[#E74C3C] mr-0
- text-[14px] 
- font-semibold'>
-02h
-<span className='ml-2 text-[14px] 
- font-semibold text-[#E74C3C]'>
-30m
-</span>
-<span className='ml-2 text-[14px] 
- font-semibold text-[#E74C3C]'>
-02s
-</span>
-</p>
-</div>
-<div className='flex gap-2 flex-wrap mt-2 '>
-<Comp5
-  image={imgg4}
-  title="Broccoli"
-  per="10%"
-  oldPrice="₹60"
-  gram="1piece"
-  newPrice="₹50"
+        {/* Groceries */}
+        <p className='mt-7 text-[16px] font-semibold text-[#1E1E1E]'>
+          Groceries & Kitchen
+        </p>
 
-/> 
-<Comp5
-  image={imgg2}
-  title="Organic Almond Milk"
-  per="10%"
-  oldPrice="₹280"
-  gram="1L"
-  newPrice="₹280"
+        <div className='mt-4'>
+          <Comp6/>
+        </div>
 
-/> 
-<Comp5
-  image={imgg3}
-  title="Hybrid Tomato"
-  per="3%"
-  oldPrice="₹30"
-  gram="500g"
-  newPrice="₹25"
+        {/* Baby & Kids */}
+        <p className='mt-7 text-[16px] font-semibold text-[#1E1E1E]'>
+          Baby & Kids
+        </p>
 
-/> 
-<Comp5
-  image={imgg1}
-  title="Amul Dark Chocolate 70% Cocoa"
-  per="5%"
-  gram="200g"
-  newPrice="₹180"
-  isCounter={true}
-/> 
-<Comp5
-  image={imgg4}
-  title="Broccoli"
-  per="10%"
-  oldPrice="₹60"
-  gram="1piece"
-  newPrice="₹50"
+        <div className='mt-4'>
+          <Comp6/>
+        </div>
 
-/> 
-<Comp5
-  image={imgg2}
-  title="Organic Almond Milk"
-  per="10%"
-  oldPrice="₹280"
-  gram="1L"
-  newPrice="₹280"
+      </div>
 
-/> 
-<Comp5
-  image={imgg3}
-  title="Hybrid Tomato"
-  per="3%"
-  oldPrice="₹30"
-  gram="500g"
-  newPrice="₹25"
+      {/* Footer */}
+      <div className='mt-60'>
+ <Footer/>
+      </div>
+     
 
-/> 
-<Comp5
-  image={imgg1}
-  title="Amul Dark Chocolate 70% Cocoa"
-  per="5%"
-  gram="200g"
-  newPrice="₹180"
-  isCounter={true}
-/> 
-</div>
-
-</div>
-</div>
-{/* Flassh Sale Div Ends */}
-{/* Top Brand Text Bef  StRTS */}
-<p className='xl:ml-33 lg:ml-18 mt-7 p-2 text-[16px]
-font-semibold text-[#1E1E1E]
-flex justify-center lg:justify-start
-'>Top Brands</p>
-{/* Top Brand Text Bef  Ends */}
-
-{/* Top Brands Starts */}
-<div className='flex justify-center'>
-<div className='grid xl:grid-cols-6 lg:grid-cols-3 xl:gap-6.5 lg:gap-15 mt-5
-grid-cols-1  gap-2 
-'>
-                <div className='h-[108px] w-[187px]
-                rounded-[10px] border border-[#27AE60]
-                bg-[#FFFFFF]
-                flex items-center justify-center
-                '>
-                        
-                        <img src={L1} alt="" className="w-[116px] h-[36] object-cover "/>
-                       
-                              
-                </div>
-
-                <div className='h-[108px] w-[187px]
-                rounded-[10px] border border-[#27AE60]
-                bg-[#FFFFFF]
-                flex items-center justify-center
-                '>
-                        
-                        <img src={L2} alt=" " className="w-[60px] h-[62px] object-cover "/>
-                       
-                              
-                </div>
-
-                <div className='h-[108px] w-[187px]
-                rounded-[10px] border border-[#27AE60]
-                bg-[#FFFFFF]
-                flex items-center justify-center
-                '>
-                        
-                        <img src={L4} alt=" " className="w-[90px] h-[50px] object-cover "/>
-                       
-                              
-                </div>
-
-                <div className='h-[108px] w-[187px]
-                rounded-[10px] border border-[#27AE60]
-                bg-[#FFFFFF]
-                flex items-center justify-center
-                '>
-                        
-                        <img src={L3} alt=" " className="w-[62px] h-[64px] object-cover "/>
-                       
-                              
-                </div>
-                
-                <div className='h-[108px] w-[187px]
-                rounded-[10px] border border-[#27AE60]
-                bg-[#FFFFFF]
-                flex items-center justify-center
-                '>
-                        
-                        <img src={L4} alt=" " className="w-[90px] h-[50px] object-cover "/>
-                       
-                              
-                </div>
-                <div className='h-[108px] w-[187px]
-                rounded-[10px] border border-[#27AE60]
-                bg-[#FFFFFF]
-                flex items-center justify-center
-                '>
-                        
-                        <img src={L3} alt=" " className="w-[62px] h-[64px] object-cover "/>
-                       
-                              
-                </div>
-                
-</div>
-</div>
-
-{/* Top Brands Ends */}
-
-<p className='lg:ml-18 xl:ml-33 mt-7 p-2 text-[16px]
-font-semibold text-[#1E1E1E]
-flex justify-center lg:justify-start
-'>Groceries & Kitchen </p>
-{/* kitchen Items Starts */}
-<div className='flex justify-center items-center mt-4'>
- <Comp6/>
-</div>
-{/* kitchen Items Ends */}
-
-<p className='lg:ml-33 mt-7 p-2 text-[16px]
-font-semibold text-[#1E1E1E]
-flex justify-center lg:justify-start
-'>Baby & Kids</p>
-{/* Kids Item Starts */}
-<div className='flex justify-center   mt-4'>
- <Comp6/>
-</div>
-{/* Kids Item Ends */}
-
-
-{/* footer Starts */}
-<div className='mt-80'>
-        <Footer/>
-</div>
-{/* footer Ends */}
     </div>
   )
 }
