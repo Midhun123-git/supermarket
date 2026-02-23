@@ -65,7 +65,7 @@ const Comp1 = () => {
 
   ]
   return (   
-    <div className=' grid  lg:grid-cols-5 lg:gap-10 xl:grid-cols-10 xl:gap-3
+    <div className=' grid  lg:grid-cols-5 lg:gap-10 xl:grid-cols-10 xl:gap-2
     grid-cols-2  gap-4
     '>
       {prod.map((items)=>(

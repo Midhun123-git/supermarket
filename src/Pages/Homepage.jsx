@@ -118,7 +118,7 @@ rounded-xl mt-7
 </div>
 {/* Third Row Componenet Ends */}
 {/* Comp4 Starts */}
-<div className='mt-7 xl:ml-38 lg:ml-28 m-2'>
+<div className='mt-7 xl:ml-36 lg:ml-28 m-2'>
     <Comp4/>
 </div>
 {/* Comp4 Ends*/}
@@ -143,10 +143,9 @@ rounded-xl mt-7
 {/* Text Beofore Comp5 Ends */}
 {/* Comp5 Starts */}
 <div className='flex  justify-center'>
-<div className='grid xl:grid-cols-9 
+<div className='grid xl:grid-cols-8 
 lg:grid-cols-5  grid-cols-2 gap-4
-lg:gap-8 xl:gap-4  
-xl:ml-33
+lg:gap-8 xl:gap-4   
 mt-7
 '>
    <Comp5
@@ -230,7 +229,7 @@ mt-7
 {/* Comp 5 Ends*/}
 {/* Flassh Sale Div Starts */}
 <div className='flex justify-center mt-9'>
-<div className='w-[85%] min-h-[314px] 
+<div className='w-[81%] min-h-[314px] 
 flex flex-col 
 lg:p-4 p-2
  bg-[#EAFFF3]
@@ -253,7 +252,7 @@ lg:p-4 p-2
 </span>
 </p>
 </div>
-<div className='flex gap-4 flex-wrap mt-2 lg:ml-9 xl:ml-2'>
+<div className='flex gap-2 flex-wrap mt-2 '>
 <Comp5
   image={imgg4}
   title="Broccoli"
@@ -330,7 +329,7 @@ lg:p-4 p-2
 </div>
 {/* Flassh Sale Div Ends */}
 {/* Top Brand Text Bef  StRTS */}
-<p className='xl:ml-30 lg:ml-18 mt-7 p-2 text-[16px]
+<p className='xl:ml-33 lg:ml-18 mt-7 p-2 text-[16px]
 font-semibold text-[#1E1E1E]
 flex justify-center lg:justify-start
 '>Top Brands</p>
@@ -338,7 +337,7 @@ flex justify-center lg:justify-start
 
 {/* Top Brands Starts */}
 <div className='flex justify-center'>
-<div className='grid xl:grid-cols-6 lg:grid-cols-3 xl:gap-8 lg:gap-15 mt-5
+<div className='grid xl:grid-cols-6 lg:grid-cols-3 xl:gap-6.5 lg:gap-15 mt-5
 grid-cols-1  gap-2 
 '>
                 <div className='h-[108px] w-[187px]
@@ -411,17 +410,17 @@ grid-cols-1  gap-2
 
 {/* Top Brands Ends */}
 
-<p className='lg:ml-18 xl:ml-30 mt-7 p-2 text-[16px]
+<p className='lg:ml-18 xl:ml-33 mt-7 p-2 text-[16px]
 font-semibold text-[#1E1E1E]
 flex justify-center lg:justify-start
 '>Groceries & Kitchen </p>
 {/* kitchen Items Starts */}
-<div className='flex justify-center p-6 items-center mt-4'>
+<div className='flex justify-center items-center mt-4'>
  <Comp6/>
 </div>
 {/* kitchen Items Ends */}
 
-<p className='lg:ml-30 mt-7 p-2 text-[16px]
+<p className='lg:ml-33 mt-7 p-2 text-[16px]
 font-semibold text-[#1E1E1E]
 flex justify-center lg:justify-start
 '>Baby & Kids</p>
@@ -433,7 +432,7 @@ flex justify-center lg:justify-start
 
 
 {/* footer Starts */}
-<div className='mt-9'>
+<div className='mt-80'>
         <Footer/>
 </div>
 {/* footer Ends */}
